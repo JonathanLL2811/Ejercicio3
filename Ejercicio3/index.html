@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversoriones</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Conversor de Unidades</h2>
+        <form id="conversionForm">
+            <div class="form-group mb-3">
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="Ingresa una cantidad">
+                <small id="cantidadError" class="text-danger"></small>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="conversionTipo">Convertir a:</label>
+                <select class="form-control" id="conversionTipo">
+                    <option value="kmToM">Kilómetros a Metros</option>
+                    <option value="mToCm">Metros a Centímetros</option>
+                    <option value="ftToInch">Pies a Pulgadas</option>
+                    <option value="yardToInch">Yardas a Pulgadas</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Convertir</button>
+        </form>
+
+        <div id="alertaResultado" class="mt-4" style="display: none;">
+            <div class="alert alert-success" role="alert" id="resultadoTexto"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
